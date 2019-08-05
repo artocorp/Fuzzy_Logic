@@ -1,17 +1,11 @@
 import fuzzy as logic
+import sys
 
-lup = True
-
-while lup == True:
+while True:
  text = input("me : ")
  tanya=(logic.fjenis(text))
- if tanya == True:
-  print('bot : [nanya] [{}]'.format(logic.fobjek(text)))
- else:
-  print('bot : [peryataan]')
+ print('bot : [nanya] [{}]'.format(logic.fobjek(text))) if tanya == True else print('bot : [peryataan]')
 
  luup=input('bot : lanjut?\nme : ')
- if luup.lower() == 'ya':
-  pass
- else:
-  lup = False
+ if luup.lower() == 'ya':pass
+ else:sys.exit('Bye onii-chan')
